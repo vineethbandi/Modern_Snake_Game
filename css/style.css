@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.bg1 {
+  background-image: url(../bg_images/1.png);
+}
+.bg2 {
+  background-image: url(../bg_images/2.png);
+}
+.bg3 {
+  background-image: url(../bg_images/3.png);
+}
+.bg4 {
+  background-image: url(../bg_images/4.png);
+}
+.bg5 {
+  background-image: url(../bg_images/5.jpg);
+}
+.bg6 {
+  background-image: url(../bg_images/6.jpg);
+}
+.bg7 {
+  background-image: url(../bg_images/7.png);
+}
+.bg8 {
+  background-image: url(../bg_images/8.jpg);
+}
+.bg9 {
+  background-image: url(../bg_images/9.jpg);
+}
+.bg10 {
+  background-image: url(../bg_images/10.png);
+}
+.body {
+
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Logo {
+  position: absolute;
+  color: lawngreen;
+  text-align: left;
+  /* max-width: 20vmin; */
+  /* max-height: 20vmin; */
+
+  /* padding: 100vh 100vh; */
+display: block;
+  font-size: 5vw;
+width: 20vw;
+
+  left: 20px;
+  text-shadow:  -0.05em 0.05em 0px black;
+  margin-bottom: 30vh;
+
+  font-weight: 400;
+  font-family: "Gloria Hallelujah", serif;
+}
+
+#Logo2 {
+  position: absolute;
+  color: white;
+  text-align: left;
+  /* max-width: 20vmin; */
+  /* max-height: 20vmin; */
+
+  /* padding: 100vh 100vh; */
+display: block;
+  font-size: 2vw;
+width: 20vw;
+
+  left: 20px;
+  text-shadow:  -0.1em 0.05em 0px black;
+  margin-top: 50vh;
+
+  font-weight: 400;
+  font-family: "Gloria Hallelujah", serif;
+
+}
+
+#scoreBox {
+  display: block;
+
+  position: absolute;
+  max-width: 25vw;
+  text-align: right;
+  color: white;
+  text-shadow:  -0.05em 0.05em 1px black;
+  right: 20px;
+  font-size: 2.5vw;
+  font-weight: 400;
+  font-family: "Press Start 2P", serif;
+  margin-bottom: 60vh;
+}
+
+#hiscoreBox {
+  display: block;
+  text-align: right;
+  position: absolute;
+  color: yellow;
+    text-shadow:  -0.05em 0.05em 1px black;
+
+  right: 20px;
+  font-size: 1.5vw;
+  font-weight: 400;
+  font-family: "Press Start 2P", serif;
+  margin-bottom:  40vh;
+}
+
+.volslid {
+
+  position: absolute;
+  display: block;
+  color: white;
+  text-shadow:  -0.05em 0.05em 1px black;
+  right: 20px;
+  font-size: 2vw;
+  font-weight: 400;
+  font-family: "Press Start 2P", serif;
+  margin-top:  40vh;
+    text-align: center;
+    padding: 10px;
+      border: solid 2px white;
+}
+
+#board {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -45vmin;
+  margin-left: -45vmin;
+
+  height: 90vmin;
+  width: 90vmin;
+
+
+
+
+
+  background-color: black;
+  opacity: 0.8;
+
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(16, 1fr);
+}
+/*
+#board:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+} */
+
+.head {
+  opacity: 1;
+
+  background-image: url(../graphics/head.png);
+
+  background-size: contain;
+    transform: rotate(0deg) scale(1.2);
+
+}
+
+.head1 {
+  opacity: 1;
+
+  background-image: url(../graphics/head.png);
+  transform: scale(1.2) rotate(90deg);
+  background-size: contain;
+
+
+}
+
+.head2 {
+  opacity: 1;
+
+  background-image: url(../graphics/head.png);
+  transform: scale(1.2) rotate(180deg);
+  background-size: contain;
+
+
+}
+
+.head3 {
+  opacity: 1;
+
+  background-image: url(../graphics/head.png);
+  transform: scale(1.2) rotate(270deg);
+  background-size: contain;
+
+
+}
+
+.snake {
+
+  opacity: 1;
+  background-image: url(../graphics/body.png);
+  background-size: contain;
+
+
+}
+.tail {
+  background-image: url(../graphics/tail.png);
+  opacity: 1;
+    background-size: contain;
+    transform: rotate(180deg) scale(1.1);
+
+}
+.tail1 {
+  background-image: url(../graphics/tail.png);
+  opacity: 1;
+    background-size: contain;
+    transform: rotate(270deg)  scale(1.1);
+
+
+}
+.tail2 {
+  background-image: url(../graphics/tail.png);
+  opacity: 1;
+    background-size: contain;
+    transform: scale(1.1);
+
+
+}
+.tail3 {
+  background-image: url(../graphics/tail.png);
+  opacity: 1;
+    background-size: contain;
+
+    transform: scale(1.1) rotate(90deg);
+
+}
+
+.food {
+  opacity: 1;
+
+  background-image: url(../graphics/coin.png);
+  background-size: contain;
+
+
+
+}
